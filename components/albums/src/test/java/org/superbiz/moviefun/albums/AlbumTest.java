@@ -1,6 +1,7 @@
 package org.superbiz.moviefun.albums;
 
 import org.junit.Test;
+import org.springframework.util.Assert;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
