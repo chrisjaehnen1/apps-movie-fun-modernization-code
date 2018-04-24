@@ -1,12 +1,4 @@
 spring:
-  jpa:
-    generate-ddl: true
-    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
-
-  datasource:
-    url: jdbc:mysql://localhost:3306/movies?useSSL=false
-    username: root
-
   mvc.view:
     prefix: /WEB-INF/
     suffix: .jsp
@@ -16,6 +8,11 @@ logging.level:
   org.superbiz.moviefun: DEBUG
 
 s3:
-  accessKey: <access key id>
-  secretKey: <secret access key>
-  bucketName: <name of the bucket>
+  accessKey: XA4UO32LSUXHRBUQLBF0
+  secretKey: 2IXQ1OS0Udhk5X3qHodNGgV4y40uKzaM61uaxwrf
+  bucketName: movie-fun-course
+
+albums:
+  url: http://localhost:8081/albums
+movies:
+  url: http://localhost:8082/movies

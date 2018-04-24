@@ -1,0 +1,21 @@
+---
+memory: 1G
+instances: 1
+applications:
+- name: album-service-cj-rwl
+  path: applications/album-service/build/libs/album-service-1.1.0-SNAPSHOT.jar
+  services:
+  - album-database
+  - moviefun-s3
+- name: movie-service-cj-rwl
+  path: applications/movie-service/build/libs/movie-service-1.1.0-SNAPSHOT.jar
+  services:
+  - movie-database
+- name: movie-fun-app-cj-rwl
+  path: applications/movie-fun-app/build/libs/movie-fun-app-1.1.0-SNAPSHOT.war
+  services:
+  - moviefun-s3
+  env:
+    ALBUMS_URL: http://album-service-cj-rwl.apps.longs.pal.pivotal.io/albums
+    MOVIES_URL: http://movie-service-cj-rwl.apps.longs.pal.pivotal.io/movies
+
