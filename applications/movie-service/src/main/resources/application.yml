@@ -1,6 +1,9 @@
 server.port: 8082
 
 spring:
+  application:
+    name: movie-service-cj-rwl
+
   jpa:
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
 
