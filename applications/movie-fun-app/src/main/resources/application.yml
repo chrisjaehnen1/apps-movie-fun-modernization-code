@@ -1,6 +1,6 @@
 spring:
   application:
-    name: movie-fun-app
+    name: movie-fun-app-cj-rwl
 
   mvc.view:
     prefix: /WEB-INF/
